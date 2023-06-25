@@ -2,6 +2,12 @@
 
 :root {
     --font1 : #333333;
+    --font2: #666666;
+    --font3: #3a3a3a;
+    --font4: #898989;
+    --color1: #B88E2F;
+    --color2: #FBFFE3;
+    --color3: #F4F5F7;
 }
 
 * {
@@ -59,7 +65,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #FBFFE3;
+    background-color: var(--color2);
     width: 45vw;
     border-radius: 10px;
     padding: 40px 30px 25px;
@@ -75,11 +81,11 @@ header {
     font-size: 3.5rem;
     line-height: 65px;
     font-weight: bold;
-    color: #B88E2F;
+    color: var(--color1);
 }
 
 .home-card .text p {
-    color: #333333;
+    color: var(--font1);
     font-size: 1.1rem;
     line-height: 24px;
 }
@@ -89,7 +95,7 @@ header {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    background-color: #B88E2F;
+    background-color: var(--color1);
     width: 15vw;
     padding: 15px;
     margin-top: 40px;
@@ -106,11 +112,11 @@ header {
 #options .text_options h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #333333;
+    color: var(--font1);
 }
 
 #options .text_options span {
-    color: #666666;
+    color: var(--font2);
     font-size: 1.2rem;
 }
 
@@ -131,4 +137,70 @@ header {
     text-align: center;
     font-weight: bold;
     font-size: 1.4rem;
+}
+
+#products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#products h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 120%;
+    color: var(--font3);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cards_products {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card_product {
+    background-color: var(--color3);
+}
+
+.card_product:hover {
+    scale: 1.1;
+}
+
+.informations_product {
+    padding: 15px 15px 25px 15px;
+}
+
+.informations_product h3{
+    color: var(--font3);
+    line-height: 120%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.informations_product p {
+    color: var(--font4);
+    font-size: 1rem;
+    line-height: 150%;
+    margin: 5px 0;
+}
+
+.informations_product span {
+    color: var(--font3);
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+#products a {
+    margin: 25px;
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 150%;
+    border: solid 2px var(--color1);
+    padding: 10px 65px;
 }

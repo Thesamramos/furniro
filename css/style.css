@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+:root {
+    --font1 : #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+
+.header-links {
+    display: flex;
+    align-items: center;
+}
+
+.header-links li {
+    list-style: none;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 25px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons a {
+    margin: 25px;
+}
+
+#home {
+    background-image: url(../img/homeImg.png);
+    height: 100vh;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FBFFE3;
+    width: 45vw;
+    border-radius: 10px;
+    padding: 40px 30px 25px;
+}
+
+.home-card .text span {
+    color: var(-font1-);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.home-card .text h2{
+    font-size: 3.5rem;
+    line-height: 65px;
+    font-weight: bold;
+    color: #B88E2F;
+}
+
+.home-card .text p {
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 24px;
+}
+
+.home-card a {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #B88E2F;
+    width: 15vw;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+#options .text_options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5vh;
+}
+
+#options .text_options h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+#options .text_options span {
+    color: #666666;
+    font-size: 1.2rem;
+}
+
+#options .cards_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card_option:first-child img,
+.card_option:last-child img {
+    border-radius: 10px;
+}
+
+.card_option p {
+    margin: 10px;
+    color: var(--font1);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}

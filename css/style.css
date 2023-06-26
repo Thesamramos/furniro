@@ -167,6 +167,7 @@ header {
 
 .card_product:hover {
     scale: 1.1;
+    cursor: pointer;
 }
 
 .informations_product {
@@ -195,7 +196,7 @@ header {
 }
 
 #products a {
-    margin: 25px;
+    margin: 35px;
     text-decoration: none;
     color: var(--color1);
     font-weight: bold;
@@ -203,4 +204,142 @@ header {
     line-height: 150%;
     border: solid 2px var(--color1);
     padding: 10px 65px;
+}
+
+#banner_slide {
+    background-color: #FCF8F3;
+    padding: 50px 5vw;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.explore h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 120%;
+    color: var(--font3);
+}
+
+.explore p {
+    color: var(--font2);
+    font-size: 1rem;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+.explore a {
+    background-color: var(--color1);
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#share img {
+    width: 100%;
+}
+
+#share span {
+    font-size: 1.2rem;
+    line-height: 150%;
+    font-weight: 500;
+    color: var(--font2)
+}
+
+#share h2 {
+    font-size: 2.5rem;
+    line-height: 120%;
+    font-weight: bold;
+    color: var(--font3);
+}
+
+footer {
+    border-top: solid 1px var(--font4);
+    margin-top: 50px;
+    padding: 50px 5vw;
+}
+
+.footer_informations {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--font4);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.funiro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.funiro h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.funiro p,
+.options_footer .links span, 
+.options_footer .help span, 
+.options_footer .newsletter span {
+    font-size: 1rem;
+    color: var(--font4);
+}
+
+.options_footer{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    gap: 10vw;
+}
+
+.options_footer .links, 
+.options_footer .help,
+.options_footer .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.options_footer .links a, 
+.options_footer .help a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.newsletter input{
+    border: none;
+    width: 173px;
+    border-bottom: solid 1px;
+    outline: none;
+}
+
+.newsletter button {
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    font-weight: 500;
+    border-bottom: solid 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+.rights {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
 }

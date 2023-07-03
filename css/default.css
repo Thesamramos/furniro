@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+:root {
+    --font1 : #333333;
+    --font2: #666666;
+    --font3: #3a3a3a;
+    --font4: #898989;
+    --color1: #B88E2F;
+    --color2: #FBFFE3;
+    --color3: #F4F5F7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+}
+
+.header-links li {
+    list-style: none;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 25px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons a {
+    margin: 25px;
+}
+
+footer {
+    border-top: solid 1px var(--font4);
+    margin-top: 50px;
+    padding: 50px 5vw;
+}
+
+.footer_informations {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--font4);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.funiro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.funiro h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.funiro p,
+.options_footer .links span, 
+.options_footer .help span, 
+.options_footer .newsletter span {
+    font-size: 1rem;
+    color: var(--font4);
+}
+
+.options_footer{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    gap: 10vw;
+}
+
+.options_footer .links, 
+.options_footer .help,
+.options_footer .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.options_footer .links a, 
+.options_footer .help a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.newsletter input{
+    border: none;
+    width: 173px;
+    border-bottom: solid 1px;
+    outline: none;
+}
+
+.newsletter button {
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    font-weight: 500;
+    border-bottom: solid 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+.rights {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+}
